@@ -22,6 +22,7 @@ h1 {
 .container {
   height: 790px;
   width: 790px;
+  margin-top: 50px;
   margin-bottom: 50px;
   background-color: aliceblue;
   border: solid grey;
@@ -41,4 +42,17 @@ h1 {
   flex: auto;
   border: solid grey;
   border-width: 0 1px 0 0;
+}
+
+.colorIt {
+  background-color: chartreuse;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-weight: bold;
+  border: solid cornflowerblue;
+  border-radius: 4px;
 }
