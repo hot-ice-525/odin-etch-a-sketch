@@ -6,7 +6,39 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
   color: green;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.container {
+  height: 790px;
+  width: 790px;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+  border: solid grey;
+  border-width: 1px 0 0 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: auto;
+  border: solid grey;
+  border-width: 0 0 1px 0;
+  display: flex;
+}
+
+.column {
+  flex: auto;
+  border: solid grey;
+  border-width: 0 1px 0 0;
 }
