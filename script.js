@@ -46,7 +46,7 @@ function createNewGrid(numOfGrids) {
 
 // Add hovering effects
 container.addEventListener("mouseover", (e) => {
-  if (e.target.classList.value == "column") {    // We don't want to color entire container or an entire row
+  if (e.target.classList.value == "column" && !e.target.hasAttribute("style")) {    // We don't want to color entire container or an entire row
     e.target.style["background-color"] = randomRGBgenerator();
   }
 });
