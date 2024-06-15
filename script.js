@@ -51,6 +51,13 @@ container.addEventListener("mouseover", (e) => {
   }
 });
 
+// Double click to remove color
+container.addEventListener("click", (e) => {
+  if (e.target.classList.value == "column" && e.target.hasAttribute("style")) {
+    e.target.removeAttribute("style");
+  }
+});
+
 function randomRGBgenerator() {
   let r = Math.ceil(Math.random() * 255);
   let g = Math.ceil(Math.random() * 255);
