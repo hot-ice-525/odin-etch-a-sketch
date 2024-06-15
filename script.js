@@ -47,6 +47,13 @@ function createNewGrid(numOfGrids) {
 // Add hovering effects
 container.addEventListener("mouseover", (e) => {
   if (e.target.classList.value == "column") {    // We don't want to color entire container or an entire row
-    e.target.classList.add("colorIt");
+    e.target.style["background-color"] = randomRGBgenerator();
   }
 });
+
+function randomRGBgenerator() {
+  let r = Math.ceil(Math.random() * 255);
+  let g = Math.ceil(Math.random() * 255);
+  let b = Math.ceil(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+}
